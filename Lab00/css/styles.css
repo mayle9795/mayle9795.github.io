@@ -1,0 +1,18 @@
+.avatar{
+  width: 12%;
+  border-radius: 10%;
+}
+
+ul{
+    line-height: 200%;
+}
+
+body{
+    background-image: url("../img/background.jpg");
+    margin-left: 3%;
+    margin-top: 3%
+}
+
+h1{
+    padding-left: 2.25%;
+}
