@@ -9,13 +9,93 @@
   
   body{
       background-image: url("../img/background.jpg");
-      margin-left: 5%;
-      margin-top: 3%
+      
   }
   
   h1{
       color: rgb(36, 134, 214);
-      font-size: x-large;
-      font-weight: 600;
-      font-family: cursive;
+      font-size: 400%;
+      font-weight:900;
+      font-family:cursive;
+      margin-left: 5%;
+      margin-top: 3%;
+     
+      
   }
+
+  hr{
+    margin-right: 5%; 
+    margin-left: 5%;
+    color: black;
+  }
+
+  .intro{
+      color:midnightblue;
+      font-size: 125%;
+      font-family:'Times New Roman', Times, serif;
+      margin-left: 5%;
+    
+    }
+
+    .courses{
+        margin-left: 3%; 
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    .course{ 
+        font-weight: normal;
+        margin-left: 3%;
+        font-size: 100%;
+    }
+
+    .movies{
+        margin-left: 3%; 
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    .movie{ 
+        font-weight: normal;
+        margin-left: 3%;
+        font-size: 100%;
+        line-height: 200%;
+    }
+
+    .vibes{
+        margin-left: 5.5%; 
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    div.vibe img{
+        width: 100%;
+        height: auto;
+    }
+
+    div.word{
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        color:royalblue;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+        margin-left: 8%;
+      }
+    .neighbors{
+        padding-top: 32%;
+        margin-left: 3%; 
+        font-size: 125%;
+        font-weight: bold;
+    }
+
+    .neighbor{
+        font-weight: normal;
+        margin-left: 3%;
+        font-size: 100%;
+        line-height: 200%;
+    }
