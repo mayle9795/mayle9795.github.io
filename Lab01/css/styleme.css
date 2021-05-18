@@ -48,10 +48,17 @@
         line-height: 200%;
     }
 
+    .m{
+        margin-left: 5.5%; 
+        font-size: 125%;
+        font-weight: bold; 
+    }
     .movies{
         margin-left: 3%; 
         font-size: 125%;
         font-weight: bold;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .movie{ 
@@ -101,6 +108,10 @@
 
     .link img{
         margin-left: 3%;
+    }
+
+    dl{
+        margin-top: -5px;
     }
 
     .movie a:hover {
