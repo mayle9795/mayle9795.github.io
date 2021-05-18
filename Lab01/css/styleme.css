@@ -99,3 +99,7 @@
         font-size: 100%;
         line-height: 200%;
     }
+    
+    .link img{
+        margin-left: 3%;
+    }
