@@ -36,14 +36,14 @@
     }
 
     .courses{
-        margin-left: 3%; 
+        margin-left: 5.5%; 
         font-size: 125%;
         font-weight: bold;
     }
 
     .course{ 
         font-weight: normal;
-        margin-left: 3%;
+        margin-left: 6%;
         font-size: 100%;
         line-height: 200%;
     }
@@ -94,14 +94,14 @@
       }
     .neighbors{
         padding-top: 32%;
-        margin-left: 3%; 
+        margin-left: 5.5%; 
         font-size: 125%;
         font-weight: bold;
     }
 
     .neighbor{
         font-weight: normal;
-        margin-left: 3%;
+        margin-left: 6%;
         font-size: 100%;
         line-height: 200%;
     }
