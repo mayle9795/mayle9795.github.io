@@ -5,6 +5,15 @@
 
 ul{
     line-height: 200%;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+li{
+    margin-left: 3%;
+    font-size: 100%;
+    font-weight: normal;
+
 }
 
 body{
@@ -15,4 +24,8 @@ body{
 
 h1{
     padding-left: 2.25%;
+}
+
+hr{
+    margin-right: 3%;
 }
