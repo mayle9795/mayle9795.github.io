@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Retrieve Grade</title>
+      <link href="../css/style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div id="container">
+         <h2>Retrieve Grade</h2>
+         <form action="url">
+            <div class="item">
+               <input type="text" id="name" name="name" placeholder="Name" required autofocus>
+            </div>
+            <br>
+            <div class="item">
+               <input type="text" id="studentid" placeholder="Student ID" required autofocus>
+            </div>
+            <br>
+            <div class="item">
+               <label for="assignments">Assignments: </label>
+               <select id="assignments" class="selection" required>
+                  <option value="Lab00" selected>Lab00</option>
+                  <option value="Lab01">Lab01</option>
+                  <option value="Lab02">Lab02</option>
+                  <option value="Lab03">Lab03</option>
+                  <option value="Homework01">Homework01</option>
+                  <option value="Homework02">Homework02</option>
+               </select>
+            </div>
+            <br>
+            <div class="item">
+               <label for="entry">Entry: </label>
+               <input type="radio" name="entry" value="august20" required> August 2020
+               <input type="radio" name="entry" value="november20" required> November 2020
+               <input type="radio" name="entry" value="feb21" required> February 2021
+               <input type="radio" name="entry" value="november20" required> May 2021
+            </div>
+            <br>
+            <div class="item">
+                <input type="checkbox" id="confirm" name="confirm" value="grade">
+                <label for="confirm">Confirmation for viewing grades only!</label><br>
+            </div>
+            <br>
+            <br>
+            <div>
+               <input type="submit" id="submit" value="Submit">
+            </div>
+         </form>
+         <br>
+         <br>
+         <div id="id_validator">
+            <a 
+            href="https://validator.w3.org/check?uri=https://mayle9795.github.io/Lab02/html/grade.html"> <img
+            src="../../Lab01/img/w3c-html.png" alt="html validator"/></a>
+            <a
+            href="https://jigsaw.w3.org/css-validator/validator?uri=https://mayle9795.github.io/Lab02/html/grade.html"> <img 
+            src="https://www.w3.org/Icons/valid-css" alt="css validator"/></a>
+        </div>
+      </div>
+   </body>
+</html>
