@@ -41,7 +41,7 @@ h1 {
 }
 
 #div_rottenbig {
-    background-image: url("../img/rbg.pngs");
+    background-image: url("../img/rbg.png");
     background-repeat: repeat-x;
     border-top-left-radius: 20px;
     font-size: 48pt;
