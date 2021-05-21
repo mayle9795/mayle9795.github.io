@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>HTML Form</title>
+      <link href="../css/style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+    <div class="container">
+        <form action="url">
+        <div class="section-form">
+            <p id="title">New User Signup:</p>
+    
+            <label class="field">Name:</label>
+            <input type="text" name="name" size="17" maxlength="16"><br><br>
+    
+            <label class="field">Gender:</label>
+            <input type="radio" name="gender" value="M">Male
+            <input type="radio" name="gender" value="F" checked>Female<br><br>
+    
+            <label class="field">Age:</label>
+            <input type="text" name="age" size="6" maxlength="2">
+            <br><br>
+    
+            <label class="field">Personality Type:</label>
+            <input type="text" name="personality_type" size="6" maxlength="4"><br><br>
+    
+            <label class="field">Favorite OS:</label>
+            <select name="os">
+                <option value="Linux"> Linux</option>
+                <option value="Mac OS X" > Mac OS X</option>
+                <option value="Windows" selected> Windows</option>
+            </select><br><br>
+    
+            <label class="field">Seeking age:</label>
+            <input type="text" name="min_seeking_age" size="6" maxlength="2" placeholder="min"> to
+            <input type="text" name="max_seeking_age" size="6" maxlength="2" placeholder="max"><br><br>
+    
+            <input type="submit" class="sign-up" value="Sign Up">
+            </div>
+        </form>
+    </div>
+    <div id="id_validator">
+        <a 
+        href="https://validator.w3.org/check?uri=https://mayle9795.github.io/Lab03/html/signup.html"> <img
+        src="../../Lab01/img/w3c-html.png" alt="html validator"/></a>
+        <a
+        href="https://jigsaw.w3.org/css-validator/validator?uri=https://mayle9795.github.io/Lab03/html/signup.html"> <img 
+        src="https://www.w3.org/Icons/valid-css" alt="css validator"/></a>
+    </div>
+   </body>
+</html>
