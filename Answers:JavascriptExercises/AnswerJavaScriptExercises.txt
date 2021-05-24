@@ -1,0 +1,50 @@
+May Le
+612381
+
+Javascript Exercises 
+
+1.	What is the difference between the following 2 statements? 
+setTimeout(booyah, 2000); It waits 2000ms to call function
+setTimeout(booyah(), 2000); Instead of waiting 2000 ms, it calls the function immediately
+
+2.	What do the following 2 alerts display (answer without running the code)? var myfunc = function(a, x) { 
+return a * x; 
+}; 
+var x = myfunc(2, 3); 
+var y = myfunc;
+ alert(x); This alert returns 6
+ alert(y(2,3)); This alert returns 6
+
+3.	 Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”
+
+<button onclick="delayMsg();">Click me!</button>
+<span id="output"></span>
+
+
+function delayMsg() {
+     setTimeout(booyah1, 2000);
+     document.getElementById("output").innerHTML = "Wait for it...";
+}
+function booyah1() {
+     document.getElementById("output").innerHTML ="BOOYAH!";
+}   
+
+function delayMsg() {
+    setTimeout(booyah2(), 2000);
+}
+function booyah2() {
+   function booyah(){
+       document.getElementById("output").innerHTML ="BOOYAH!";
+   }
+   
+   return booyah;
+
+}   
+
+
+4.	 What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+-	Unobtrusive Javascript: separation of content (HTML), presentation(CSS) and behavior (Javascript)
+
+
+
+
