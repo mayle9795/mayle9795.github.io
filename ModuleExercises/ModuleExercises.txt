@@ -118,6 +118,8 @@ add7( ); add7( ); add7( ); // final counter value is 21
 these function and variable names will be added to the Global Javascript namespace. What simple modification to
 the Javascript file can remove all the names from the Global namespace?
 
+    - Using Module
+
 
 10. Using the Revealing Module Pattern, write a Javascript definition of a Module that creates an Employee Object
 with the following fields and methods:

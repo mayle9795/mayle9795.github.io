@@ -114,23 +114,23 @@ and open the template in the editor.
     // promise.then(val => alert("“Success: “" + val))
     // .catch(e => alert("“Error: “" + e));
 
-    function job(state) {
-            return new Promise(function(resolve, reject) {
-                if (state) {
-                    resolve('success');
-                } else {
-                    reject('error');
-                }   
-            });
-        }
-        let promise = job(true);
-        promise.then(function(data) {
-            console.log(data);
-            return job(false);})
-            .catch(function(error) {
-            console.log(error);
-            return 'Error caught';
-        });
+    // function job(state) {
+    //         return new Promise(function(resolve, reject) {
+    //             if (state) {
+    //                 resolve('success');
+    //             } else {
+    //                 reject('error');
+    //             }   
+    //         });
+    //     }
+    //     let promise = job(true);
+    //     promise.then(function(data) {
+    //         console.log(data);
+    //         return job(false);})
+    //         .catch(function(error) {
+    //         console.log(error);
+    //         return 'Error caught';
+    //     });
 
         
         </script>
