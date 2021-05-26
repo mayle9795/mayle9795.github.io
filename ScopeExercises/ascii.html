@@ -9,29 +9,130 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-	<h1> Another scope example slide </h1>
+	<h1> Test Demo </h1>
         <script>
-            x = 1;
-            var a = 5;
-            var b = 10;
-            var c = function(a, b, c) {
-                    var x = 10;        
-                    document.write(x + "<br>"); 
-                    document.write(a + "<br>"); 
-                    var f = function(a, b, c) {
-                            b = a;              
-                            document.write(b + "<br>");  
-                            b = c;
-                            var x = 5;
-                        }
-                    f(a,b,c);
-                    document.write(b + "<br>");
-            }
-            c(8,9,10);
-            document.write(b + "<br>");
-            document.write(x + "<br>");
+            // x = 1;
+            // var a = 5;
+            // var b = 10;
+            // var c = function(a, b, c) {
+            //         var x = 10;        
+            //         document.write(x + "<br>"); 
+            //         document.write(a + "<br>"); 
+            //         var f = function(a, b, c) {
+            //                 b = a;              
+            //                 document.write(b + "<br>");  
+            //                 b = c;
+            //                 var x = 5;
+            //             }
+            //         f(a,b,c);
+            //         document.write(b + "<br>");
+            // }
+            // c(8,9,10);
+            // document.write(b + "<br>");
+            // document.write(x + "<br>");
 
+            // x = 1;
+            // var a = 5;
+            // var b = 10;
+            // var c = function(a, b, c) {
+            //         document.write(x + "<br>");     // Output: x = undefined
+            //         document.write(a + "<br>");     // Output: a = 8
+            //             var f = function(a, b, c) {
+            //             b = a;              
+            //             document.write(b + "<br>");  // Output: b = a = 8
+            //             b = c;
+            //             var x = 5;
+            //             }
+            //         f(a,b,c);
+            //         document.write(b + "<br>");   // Output: b = 9;
+            //         var x = 10;
+            //         }
+            // c(8,9,10);
+            // document.write(b + "<br>");          // Output: b = 10;
+            // document.write(x + "<br>");          // Output: x = 1
 
+            // var x = 9;
+            // function myFunction() {
+            //     return x * x;
+            // }
+            // document.write(myFunction()); // Output: 81
+            // x = 5;
+            // document.write(myFunction());// Output: 25
+
+            // var foo = 1;
+            // function bar() {
+            //     if (!foo) {
+            //         var foo = 10;
+            //     }
+            //     alert(foo);
+            // }
+            // bar();
+
+        //     var count = (function(){
+        //     var counter = 0;
+        //     let add = function(){
+        //         return counter += 1;
+        //     };
+        //     let reset = function(){
+        //         return counter = 0;
+        //     };
+
+        //     return{
+        //         add:add,
+        //         reset:reset
+        //     };
+        // })();
+        // document.write(count.add());
+        // document.write(count.add());
+        // document.write(count.reset());
+    
+        // function make_adder(inc){
+        //     let counter = 0;
+        //     return function(){
+        //         return counter += inc;
+        //     };
+        // }
+        // let add5 = make_adder(5);
+        // add5();
+        // add5();
+        // add5();
+        // let add7 = make_adder(7);
+        // add7();
+        // add7();
+        // add7();
+
+    // const promise = new Promise((resolve, reject) => {
+    //     reject("Hattori");
+    // });
+    // promise.then(val => alert("Success " + val))
+    // .catch(e => alert("Error " + e)); 
+
+    // const promise = new Promise((resolve, reject) => {
+    // resolve("“Hattori”");
+    // setTimeout(()=> reject("“Yoshi”"), 500);
+    // });
+    // promise.then(val => alert("“Success: “" + val))
+    // .catch(e => alert("“Error: “" + e));
+
+    function job(state) {
+            return new Promise(function(resolve, reject) {
+                if (state) {
+                    resolve('success');
+                } else {
+                    reject('error');
+                }   
+            });
+        }
+        let promise = job(true);
+        promise.then(function(data) {
+            console.log(data);
+            return job(false);})
+            .catch(function(error) {
+            console.log(error);
+            return 'Error caught';
+        });
+
+        
         </script>
     </body>
 </html>
