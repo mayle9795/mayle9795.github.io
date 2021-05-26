@@ -1,0 +1,100 @@
+Javascript Scope Exercises
+
+1. Determine what this Javascript code will print out (without running it):
+x = 1;
+var a = 5;
+var b = 10;
+var c = function(a, b, c) {
+        var x = 10;        
+        document.write(x); // Output: 10
+        document.write(a); // Output: 8
+        var f = function(a, b, c) {
+                b = a;              
+                document.write(b);  // Output: 8
+                b = c;
+                var x = 5;
+            }
+        f(a,b,c);
+        document.write(b);  // Output: 9
+ }
+c(8,9,10);
+document.write(b);  // Output: 10
+document.write(x);  // Output: 1
+
+    The code will print out: 10 8 8 9 10 1
+
+2. What is the difference between a method and function?
+    Function: perform some specific set of task. It needs keyword function
+    Method: property of an object containing a function definition. Methods are functions stored as object properties.
+
+3. What does 'this' refer to when used in a Java method?
+    'this' refers to the current object in a Java method
+
+
+4. What does 'this' refer to when used in a JavaScript method?
+    Inside an objects method, this is used to refer to object itself.
+    The keyword 'this' is mandatory in Javascript
+
+5. What does 'this' refer to when used in a JavaScript constructor function?
+    The keyword this inside the constructor function points to the newly created object
+
+
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+When f is called by x.f( ), what does 'this' refer to?
+    'this' refers to object x;
+
+7. What is a free variable in JavaScript?
+    Free variable: A variable referred to by a function that is not one of its parameters or local variables
+
+
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+
+    var o = {
+        name:"fred:,
+        major:"music",
+        number: function(a,b){
+            if (a < b)
+                return a;
+            else if (a > b)
+                return b;
+            else 
+                return a*b;
+        },
+
+    }
+
+9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+Employee objects have the following fields: name, salary, position.
+
+    function Employee(name, salary, position){
+        this.name = name;
+        this.salary = salary;
+        this.position = position;
+    }
+    var employee1 = new Employee("Tabitha", "100000.00", "Project Manager");
+    var employee2 = new Employee("William", "200000.00", "Software Developer");
+    var employee3 = new Employee("Alex","89000.00","HR");
+
+
+10. Write a Javascript function that takes any number of input arguments and returns the product of the
+arguments.
+
+    function product(){
+        var product = 0;
+        var i;
+        for (i = 0; i < arguments.length; i++){
+            product = product * arguments[i];
+        }
+        return product;
+    }
+
+    // Example for input:  var x = product(1,2,3,5,6);
+
+
+11. Write an arrow function that returns the maximum of its three input arguments.
+
+    maximum = (a,b,c) => {
+        var temp = a<=b? b : a;
+        return temp<=c? c : temp;
+    }
