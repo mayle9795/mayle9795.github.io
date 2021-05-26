@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Create Bank Account</title>
+        <style>
+            .container{
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            .form-item {
+               
+                margin-bottom: 10px;
+            }
+
+            label {
+                width: 120px;
+                float:left;
+            }
+            input {
+                height: 20px;
+            }
+
+            button {
+                padding: 5px;
+                margin: 10px auto;
+                font-size: 20px;
+                width: 300px;
+
+            }
+
+            textarea {
+                width: 700px;
+                min-height: 200px;
+            }
+        </style>
+	</head>
+
+	<body>
+       
+        <div class="container">
+             <h1>Create Bank Account</h1>
+            <div class="form-item">
+                <label for="name">Account Name:</label>
+                <input type="text" name="name" id="name" autofocus/>
+            </div>
+
+            <div class="form-item">
+                <label for="deposit">Deposit</label>
+
+                <input type="text" name="deposit" id="deposit" />
+            </div>
+
+            <div class="form-item">
+                <button id="btn">Create New Account</button>
+            </div>
+            
+            <div class="form-item">
+                <textarea id="area_show"></textarea>
+            </div>
+        </div>
+
+        <script>
+            let accountInfoList=[];
+
+            let btn = document.getElementById("btn");
+            let nameEl = document.getElementById("name");
+            let depositEl = document.getElementById("deposit");
+            let areaShowEl = document.getElementById("area_show");
+
+            btn.onclick = clickhandler;
+
+            let accountHandler = function(){
+                return {
+                    createAccount: function(name, balance){
+                        accountInfoList.push({
+                            name: name,
+                            balance: balance
+                        });
+                    },
+                };
+            }();
+
+            function clickhandler() {
+                if(nameEl.value =="" || depositEl.value== "") {
+                    return false;
+                }
+                accountHandler.createAccount(nameEl.value, depositEl.value);
+
+                let context = "";
+                for(let i= 0; i < accountInfoList.length; i++) {
+                    context += "Account name: " + accountInfoList[i].name + "  Balance: " + accountInfoList[i].balance + "\n";
+                }
+                areaShowEl.innerHTML = context;
+            }
+        </script>
+	</body>
+</html>

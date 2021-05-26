@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rewrite setInterval (Module Pattern)</title>
+</head>
+
+<body>
+    <button onclick="rudy()">Click Me</button>  
+    <span id="output"></span>
+    <script> 
+    var rudyTimer = (function(){
+        var timer = null; 
+        var startTimer = function (){
+            timer = setInterval(function(){
+                document.getElementById("output").innerHTML += "Rudy!";
+            },1000);
+        };
+
+        var stopTimer = function(){
+            clearInterval(timer);
+            timer = null;
+        };
+
+        var getTimer = function(){
+            return timer;
+        };
+
+        return {
+            startTimer: startTimer,
+            stopTimer: stopTimer,
+            getTimer:getTimer
+        };
+
+    })();
+
+    function rudy(){
+        if (rudyTimer.getTimer())
+            rudyTimer.stopTimer();
+        else
+            rudyTimer.startTimer();
+    }
+    
+    </script>
+</body>
+
+</html>

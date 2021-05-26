@@ -1,0 +1,38 @@
+* {
+    font-size: 14pt;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 860px;
+    border: 1px solid #CCCCFF;
+    margin: 0 auto;
+    background-color: #CCCCFF;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 23pt;
+}
+
+textarea {
+    resize: none;
+    width: 90%;
+    height: 400px;
+    font-size: 12pt;
+    font-weight: bold;   
+}
+
+.control {
+    display: inline-flex;
+}
+
+fieldset {
+    border: 5px solid;
+}
+
+#validation{
+    text-align :end;
+    display: block;
+}
