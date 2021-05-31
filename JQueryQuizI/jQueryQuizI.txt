@@ -1,0 +1,16 @@
+1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”? 
+- jQuery function  lets you select elements using CSS selectors --> will create jQuery Object
+- jQuery object is created from the array elements in the order they appeared in the array;
+
+2. Write jQuery code to find all h1 elements that are children of a div element and make their background color red. 
+
+$(document).ready(function () {
+            $("div h1").css("background-color", "red");
+        });
+
+3. Use a jQuery method to insert the text "YES!" at the end of the <p> element.
+
+$(document).ready(function () {
+            $("p").html($("p").html() + "YES!");
+        });
+ 
