@@ -1,0 +1,22 @@
+1.
+    Fragment 1: 
+    - idx is index
+    - e reference to each li object
+    - $(e) will select the object
+
+    Fragment 2:
+    - `this` is reference to each li object
+    - $(this) will select the object
+
+    Fragment 3
+    - `this` is reference to each li object
+    - $(this) will select the object
+
+    => 3 code fragments are equivalent
+
+2.
+    $("div:has(ul)").css("color", "blue");
+
+3.
+    $(document.body).append("<div><h1>JQuery Core</h1></div>");
+
