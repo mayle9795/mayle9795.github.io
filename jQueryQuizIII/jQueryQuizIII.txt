@@ -1,0 +1,9 @@
+1.  $("p").last().html($("p").first().text());
+
+2. $(".level-2>li").css("background-color", "red");
+
+3. $(".third-item").prev().css("background-color", "blue");
+
+4. $(".turkey").replaceWith("<li>Mashed Potatoes</li>");
+
+5. $("span").parents().filter("div.ancestors").children().css("background-color", "green");
