@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Lab</title>
+<style>
+    .container {
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 500px;
+        border: 1px black solid;
+        height: 300px;
+    }
+
+    .box{
+        padding-left: 15px;
+    }
+</style>
+</head>
+<body>
+    <div class = "container">
+    <form action = "http://localhost:8080/submit.js">
+    <div class = "box">
+    <h1>The Number Quiz</h1>
+    <p name="score">Your current score is 0</p>
+    <p>Guess the number in the sequence</p>
+    <p name="numbers"> </p>
+    <label>Your answer is: </label>
+    <input type = "text" name="value" size =7 /></br></br>
+    <input type="submit" value="Submit"/>
+    </div>
+    </form>
+    </div>
+</body>
+</html>

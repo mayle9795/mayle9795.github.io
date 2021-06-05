@@ -19,6 +19,7 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:5500",
             "webRoot": "${workspaceRoot}"
+            // Change url to 5500
         }
 
 
