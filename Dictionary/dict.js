@@ -45,4 +45,3 @@ function printDefinition(output){
 
     $("#results ol").html(outputText);
 }
-

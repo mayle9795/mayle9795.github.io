@@ -14,10 +14,8 @@ app.get('/', function(req,res){
 
 app.post('/lookUp',(req,res)=>{
     let w = req.body.word;
-    lookUp.getDefinitions(req,res,w);
-    
+    lookUp.getDefinitions(req,res,w); 
 });
-
 
 var server = app.listen(28888, function(){
     console.log("Node server is running..");
